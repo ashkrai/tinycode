@@ -8,7 +8,6 @@ import (
 
 func main() {
 	http.HandleFunc("/", handleRoot)
-
 	fmt.Println("listening to port 8080")
 	err := http.ListenAndServe(":8080", nil)
 	if err != nil {
