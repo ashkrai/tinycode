@@ -88,6 +88,7 @@ func deleteWord() {
 	fmt.Println("Word deleted successfully.")
 }
 
+// helper function
 func wordExists() bool {
 	data, err := os.ReadFile(fileName)
 	if err != nil || strings.TrimSpace(string(data)) == "" {
